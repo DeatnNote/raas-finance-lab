@@ -1,0 +1,1475 @@
+{
+  "business": {
+    "customers": 36,
+    "robots": 147,
+    "months": [
+      "2025-01",
+      "2026-06"
+    ],
+    "raw_events": 58096,
+    "retried_events": 859,
+    "robots_with_clock_skew": 36,
+    "robots_with_flaky_uplink": 19,
+    "redeployed_robots": 7,
+    "billing_config_typos": 3,
+    "true_billings": 10868371.79,
+    "sla_credited_invoices": 48,
+    "sla_credits": -85014.93
+  },
+  "billing": {
+    "pipeline": {
+      "invoices": 375,
+      "true_billings": 10003542.879999999,
+      "first_invoice_exact_share": 0.7653333333333333,
+      "final_exact_share": 1.0,
+      "overbilled": 0.010000000111176632,
+      "underbilled": 0.010000000052968971,
+      "abs_error": 0.020000000164145604,
+      "abs_error_share": 1.999291691359812e-09,
+      "worst_invoice_error": 0.010000000002037268,
+      "adjustments": 88,
+      "adjustment_total": 22590.29,
+      "exceptions_over_24h": 2,
+      "config_mismatches": 3
+    },
+    "legacy": {
+      "invoices": 375,
+      "true_billings": 10003542.879999999,
+      "first_invoice_exact_share": 0.2853333333333333,
+      "final_exact_share": 0.2853333333333333,
+      "overbilled": 192045.61,
+      "underbilled": 163334.14,
+      "abs_error": 355379.75,
+      "abs_error_share": 0.03552538878105954,
+      "worst_invoice_error": 12381.71,
+      "adjustments": 0,
+      "adjustment_total": 0.0,
+      "exceptions_over_24h": 410,
+      "config_mismatches": 0
+    },
+    "without_each_fix": {
+      "dedupe": {
+        "invoices": 375,
+        "true_billings": 10003542.879999999,
+        "first_invoice_exact_share": 0.34933333333333333,
+        "final_exact_share": 0.37066666666666664,
+        "overbilled": 106210.43000000004,
+        "underbilled": 3.637978807091713e-12,
+        "abs_error": 106210.43000000004,
+        "abs_error_share": 0.010617281424598647,
+        "worst_invoice_error": 2299.2500000000146,
+        "adjustments": 88,
+        "adjustment_total": 22552.989999999998,
+        "exceptions_over_24h": 115,
+        "config_mismatches": 3
+      },
+      "clock": {
+        "invoices": 375,
+        "true_billings": 10003542.879999999,
+        "first_invoice_exact_share": 0.6213333333333333,
+        "final_exact_share": 0.696,
+        "overbilled": 11701.090000000077,
+        "underbilled": 10777.330000000013,
+        "abs_error": 22478.420000000093,
+        "abs_error_share": 0.0022470458986026853,
+        "worst_invoice_error": 786.7200000000012,
+        "adjustments": 89,
+        "adjustment_total": 22495.28,
+        "exceptions_over_24h": 288,
+        "config_mismatches": 3
+      },
+      "as_of_map": {
+        "invoices": 375,
+        "true_billings": 10003542.879999999,
+        "first_invoice_exact_share": 0.6613333333333333,
+        "final_exact_share": 0.864,
+        "overbilled": 114254.91000000009,
+        "underbilled": 106746.81000000003,
+        "abs_error": 221001.72000000012,
+        "abs_error_share": 0.022092344947293327,
+        "worst_invoice_error": 12232.330000000002,
+        "adjustments": 89,
+        "adjustment_total": 22600.629999999997,
+        "exceptions_over_24h": 2,
+        "config_mismatches": 3
+      },
+      "late_trueup": {
+        "invoices": 375,
+        "true_billings": 10003542.879999999,
+        "first_invoice_exact_share": 0.7653333333333333,
+        "final_exact_share": 0.7653333333333333,
+        "overbilled": 0.0,
+        "underbilled": 22590.28999999992,
+        "abs_error": 22590.28999999992,
+        "abs_error_share": 0.002258228936586507,
+        "worst_invoice_error": 859.6900000000023,
+        "adjustments": 0,
+        "adjustment_total": 0.0,
+        "exceptions_over_24h": 2,
+        "config_mismatches": 3
+      },
+      "config_check": {
+        "invoices": 375,
+        "true_billings": 10003542.879999999,
+        "first_invoice_exact_share": 0.736,
+        "final_exact_share": 0.9333333333333333,
+        "overbilled": 9377.380000000085,
+        "underbilled": 72484.98000000004,
+        "abs_error": 81862.36000000013,
+        "abs_error_share": 0.008183336741992366,
+        "worst_invoice_error": 4158.0,
+        "adjustments": 89,
+        "adjustment_total": 22956.109999999997,
+        "exceptions_over_24h": 2,
+        "config_mismatches": 0
+      }
+    },
+    "config_mismatches": [
+      {
+        "contract_id": "K007",
+        "field": "rate_per_hour",
+        "billing_system": 24.32,
+        "signed": 27.02
+      },
+      {
+        "contract_id": "K010",
+        "field": "min_hours",
+        "billing_system": 0.0,
+        "signed": 340.0
+      },
+      {
+        "contract_id": "K025",
+        "field": "tier_rate",
+        "billing_system": 23.17,
+        "signed": 19.69
+      }
+    ],
+    "usage_exceptions": [
+      {
+        "month": "2025-05",
+        "robot_id": "R0027",
+        "date": "2025-05-16",
+        "hours": 29.37
+      },
+      {
+        "month": "2026-02",
+        "robot_id": "R0021",
+        "date": "2026-02-19",
+        "hours": 29.65
+      }
+    ]
+  },
+  "close": {
+    "checks": [
+      {
+        "check": "trial balance balances",
+        "pass": true,
+        "detail": "debits 55,890,401.78 credits 55,890,401.78"
+      },
+      {
+        "check": "ledger hash chain intact",
+        "pass": true,
+        "detail": "5,089 entries"
+      },
+      {
+        "check": "AR subledger = GL accounts receivable",
+        "pass": true,
+        "detail": "open invoices 2,175,170.36 vs GL 2,175,170.36"
+      },
+      {
+        "check": "Deferred revenue schedule = GL",
+        "pass": true,
+        "detail": "schedule 335,750.00 vs GL 335,749.98"
+      },
+      {
+        "check": "Billing = usage revenue net of credits",
+        "pass": true,
+        "detail": "billing 9,982,936.19 vs GL 9,982,936.19"
+      },
+      {
+        "check": "GL cash = bank statement",
+        "pass": true,
+        "detail": "bank 7,008,767.11 vs GL 7,008,767.11"
+      },
+      {
+        "check": "Short-pay fees written off",
+        "pass": true,
+        "detail": "439.00 to bank fees"
+      }
+    ],
+    "cash": {
+      "deposits": 337,
+      "customer_payments": 317,
+      "auto_applied_share": 0.9810725552050473,
+      "applied_correctly": 310,
+      "applied_wrongly": 1,
+      "to_review": 26,
+      "non_customer_deposits_left_unapplied": 20,
+      "by_kind": {
+        "combined": 0.85,
+        "exact": 1.0,
+        "no_reference": 0.8787878787878788,
+        "short_pay_fee": 1.0
+      }
+    },
+    "spend": {
+      "possible_duplicate": {
+        "planted": 25,
+        "flagged": 19,
+        "caught": 19,
+        "false_flags": 0
+      },
+      "unusual_account": {
+        "planted": 30,
+        "flagged": 49,
+        "caught": 30,
+        "false_flags": 19
+      },
+      "possible_split_purchase": {
+        "planted": 24,
+        "flagged": 29,
+        "caught": 24,
+        "false_flags": 5
+      }
+    },
+    "journals": 2495,
+    "ledger_lines": 5089,
+    "bills": 858,
+    "invoices_issued": 411,
+    "ledger_controls": {
+      "idempotent_repost_returns_same_journal": true,
+      "unbalanced_rejected": true,
+      "self_approved_manual_rejected": true,
+      "tampering_detected": true
+    }
+  },
+  "forecast": {
+    "by_origin": {
+      "2025-07": {
+        "months": [
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01"
+        ],
+        "actual": [
+          450178.5,
+          512482.88,
+          622552.27,
+          682193.61,
+          809400.97,
+          833608.89
+        ],
+        "driver_plan": {
+          "forecast": [
+            437892.36200984614,
+            541363.3651539355,
+            625274.4416629553,
+            557839.9752183701,
+            629880.0654920196,
+            605715.2298939378
+          ],
+          "mape": 0.1275800129277128,
+          "total_error_share": -0.1310478306644012
+        },
+        "run_rate": {
+          "forecast": [
+            362360.38,
+            362360.38,
+            362360.38,
+            362360.38,
+            362360.38,
+            362360.38
+          ],
+          "mape": 0.4154003115026688,
+          "total_error_share": -0.44400757942671853
+        },
+        "linear_trend": {
+          "forecast": [
+            388209.29914285714,
+            414058.2182857143,
+            439907.13742857135,
+            465756.0565714285,
+            491604.9757142856,
+            517453.89485714276
+          ],
+          "mape": 0.2853748673538871,
+          "total_error_share": -0.30519187630807026
+        }
+      },
+      "2025-08": {
+        "months": [
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02"
+        ],
+        "actual": [
+          512482.88,
+          622552.27,
+          682193.61,
+          809400.97,
+          833608.89,
+          794605.74
+        ],
+        "driver_plan": {
+          "forecast": [
+            543570.205976618,
+            685043.9113953157,
+            645668.2459480603,
+            739433.0914598361,
+            708686.3742212582,
+            653675.0931575493
+          ],
+          "mape": 0.10470695483061665,
+          "total_error_share": -0.06551765805162421
+        },
+        "run_rate": {
+          "forecast": [
+            450178.5,
+            450178.5,
+            450178.5,
+            450178.5,
+            450178.5,
+            450178.5
+          ],
+          "mape": 0.34596524038169846,
+          "total_error_share": -0.3651774844238955
+        },
+        "linear_trend": {
+          "forecast": [
+            487348.2917142857,
+            524518.0834285713,
+            561687.8751428571,
+            598857.6668571428,
+            636027.4585714284,
+            673197.2502857142
+          ],
+          "mape": 0.17218220062737769,
+          "total_error_share": -0.18172409342841397
+        }
+      },
+      "2025-09": {
+        "months": [
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03"
+        ],
+        "actual": [
+          622552.27,
+          682193.61,
+          809400.97,
+          833608.89,
+          794605.74,
+          854151.7
+        ],
+        "driver_plan": {
+          "forecast": [
+            682479.223566681,
+            722876.7404153598,
+            866849.6820536174,
+            853839.9865254114,
+            786703.0283060449,
+            856470.0416260567
+          ],
+          "mape": 0.043966940101594985,
+          "total_error_share": 0.03757315942106611
+        },
+        "run_rate": {
+          "forecast": [
+            512482.88,
+            512482.88,
+            512482.88,
+            512482.88,
+            512482.88,
+            512482.88
+          ],
+          "mape": 0.32211555593714797,
+          "total_error_share": -0.33103699269714704
+        },
+        "linear_trend": {
+          "forecast": [
+            563191.2248571429,
+            613899.5697142857,
+            664607.9145714286,
+            715316.2594285713,
+            766024.6042857142,
+            816732.949142857
+          ],
+          "mape": 0.09933849959297353,
+          "total_error_share": -0.09936676783335142
+        }
+      },
+      "2025-10": {
+        "months": [
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04"
+        ],
+        "actual": [
+          682193.61,
+          809400.97,
+          833608.89,
+          794605.74,
+          854151.7,
+          858257.19
+        ],
+        "driver_plan": {
+          "forecast": [
+            707742.1077535688,
+            864442.5254299884,
+            859153.418931571,
+            802023.7499586106,
+            875733.3673856024,
+            876417.711980781
+          ],
+          "mape": 0.03197644182143622,
+          "total_error_share": 0.03172348148775033
+        },
+        "run_rate": {
+          "forecast": [
+            622552.27,
+            622552.27,
+            622552.27,
+            622552.27,
+            622552.27,
+            622552.27
+          ],
+          "mape": 0.22229376727446484,
+          "total_error_share": -0.22699813156198384
+        },
+        "linear_trend": {
+          "forecast": [
+            691588.0208571429,
+            760623.7717142857,
+            829659.5225714286,
+            898695.2734285714,
+            967731.0242857143,
+            1036766.7751428571
+          ],
+          "mape": 0.09178851924091957,
+          "total_error_share": 0.07301952865082821
+        }
+      },
+      "2025-11": {
+        "months": [
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05"
+        ],
+        "actual": [
+          809400.97,
+          833608.89,
+          794605.74,
+          854151.7,
+          858257.19,
+          842869.12
+        ],
+        "driver_plan": {
+          "forecast": [
+            787146.5950406936,
+            798972.0873977661,
+            756361.4714319162,
+            827863.5219458893,
+            832583.0682569988,
+            804934.0124519174
+          ],
+          "mape": 0.03714557853450633,
+          "total_error_share": -0.03705924218057156
+        },
+        "run_rate": {
+          "forecast": [
+            682193.61,
+            682193.61,
+            682193.61,
+            682193.61,
+            682193.61,
+            682193.61
+          ],
+          "mape": 0.17956001218307563,
+          "total_error_share": -0.18020250785996617
+        },
+        "linear_trend": {
+          "forecast": [
+            760521.54,
+            838849.47,
+            917177.4,
+            995505.3300000001,
+            1073833.26,
+            1152161.19
+          ],
+          "mape": 0.16742522739350907,
+          "total_error_share": 0.1492430318378044
+        }
+      },
+      "2025-12": {
+        "months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "actual": [
+          833608.89,
+          794605.74,
+          854151.7,
+          858257.19,
+          842869.12,
+          861393.3099999999
+        ],
+        "driver_plan": {
+          "forecast": [
+            803218.8216299093,
+            763516.5081791877,
+            836785.2632451061,
+            846323.1316616216,
+            821008.3636881078,
+            855881.9789430378
+          ],
+          "mape": 0.023692074707898452,
+          "total_error_share": -0.02342012957756352
+        },
+        "run_rate": {
+          "forecast": [
+            809400.97,
+            809400.97,
+            809400.97,
+            809400.97,
+            809400.97,
+            809400.97
+          ],
+          "mape": 0.042840375528037294,
+          "total_error_share": -0.037360632503496104
+        },
+        "linear_trend": {
+          "forecast": [
+            896295.7605714286,
+            983190.5511428571,
+            1070085.3417142858,
+            1156980.1322857141,
+            1243874.9228571428,
+            1330769.7134285714
+          ],
+          "mape": 0.3223432683031801,
+          "total_error_share": 0.32435033977329064
+        }
+      }
+    },
+    "mean_mape": {
+      "driver_plan": 0.061511333820627574,
+      "run_rate": 0.2546958771345155,
+      "linear_trend": 0.18974209708530787
+    }
+  },
+  "variance": [
+    {
+      "plan_revenue": 803218.8216299094,
+      "actual_revenue": 833608.8899999998,
+      "variance": 30390.068370090332,
+      "effects": {
+        "fleet": -27320.368082649977,
+        "utilisation": 85481.92895040002,
+        "rate": -32018.157473857027,
+        "credits": 4246.664976197537
+      },
+      "drivers": {
+        "robots": [
+          147.0,
+          142
+        ],
+        "hours_per_robot": [
+          220.11678839995042,
+          244.36739436619717
+        ],
+        "rate_per_hour": [
+          25.037851045374687,
+          24.10717526744105
+        ],
+        "credit_rate": [
+          0.008560259898863207,
+          0.0034836934803998475
+        ]
+      },
+      "top_customers_hours_vs_plan": {
+        "C026": 587.0,
+        "C027": 433.0,
+        "C025": 366.0
+      },
+      "sla_credit_customers": [
+        "C006",
+        "C023",
+        "C033"
+      ],
+      "month": "2026-01"
+    },
+    {
+      "plan_revenue": 763516.5081791877,
+      "actual_revenue": 794605.74,
+      "variance": 31089.231820812332,
+      "effects": {
+        "fleet": 0.0,
+        "utilisation": 34229.82989524702,
+        "rate": -5905.7547930012815,
+        "credits": 2765.1567185665212
+      },
+      "drivers": {
+        "robots": [
+          147.0,
+          147
+        ],
+        "hours_per_robot": [
+          209.98952999681663,
+          219.40374149659863
+        ],
+        "rate_per_hour": [
+          24.948080251134048,
+          24.763388404255814
+        ],
+        "credit_rate": [
+          0.008560259898863207,
+          0.005098090471989902
+        ]
+      },
+      "top_customers_hours_vs_plan": {
+        "C026": 456.0,
+        "C027": 362.0,
+        "C034": -281.0
+      },
+      "sla_credit_customers": [
+        "C015",
+        "C026",
+        "C032"
+      ],
+      "month": "2026-02"
+    },
+    {
+      "plan_revenue": 836785.2632451061,
+      "actual_revenue": 854151.7000000001,
+      "variance": 17366.436754893977,
+      "effects": {
+        "fleet": 0.0,
+        "utilisation": 26116.99556883778,
+        "rate": -7456.324982999702,
+        "credits": -1294.2338309440606
+      },
+      "drivers": {
+        "robots": [
+          147.0,
+          147
+        ],
+        "hours_per_robot": [
+          235.25960004322053,
+          242.60231292517003
+        ],
+        "rate_per_hour": [
+          24.405235974927113,
+          24.194350710857954
+        ],
+        "credit_rate": [
+          0.008560259898863207,
+          0.010060243477293377
+        ]
+      },
+      "top_customers_hours_vs_plan": {
+        "C026": 548.0,
+        "C027": 373.0,
+        "C013": 299.0
+      },
+      "sla_credit_customers": [
+        "C004",
+        "C008",
+        "C015",
+        "C020",
+        "C022"
+      ],
+      "month": "2026-03"
+    },
+    {
+      "plan_revenue": 846323.1316616217,
+      "actual_revenue": 858257.1900000001,
+      "variance": 11934.058338378323,
+      "effects": {
+        "fleet": 0.0,
+        "utilisation": 18752.781073537095,
+        "rate": -3693.168339707227,
+        "credits": -3125.554395451477
+      },
+      "drivers": {
+        "robots": [
+          147.0,
+          147
+        ],
+        "hours_per_robot": [
+          238.48105609104442,
+          243.76530612244892
+        ],
+        "rate_per_hour": [
+          24.349983277808978,
+          24.246028716145513
+        ],
+        "credit_rate": [
+          0.008560259898863207,
+          0.012157730196080761
+        ]
+      },
+      "top_customers_hours_vs_plan": {
+        "C026": 690.0,
+        "C013": 315.0,
+        "C029": -296.0
+      },
+      "sla_credit_customers": [
+        "C000",
+        "C004",
+        "C011",
+        "C017",
+        "C028"
+      ],
+      "month": "2026-04"
+    },
+    {
+      "plan_revenue": 821008.3636881078,
+      "actual_revenue": 842869.12,
+      "variance": 21860.756311892183,
+      "effects": {
+        "fleet": 0.0,
+        "utilisation": 26131.38107769646,
+        "rate": -5755.509827086033,
+        "credits": 1484.885061281772
+      },
+      "drivers": {
+        "robots": [
+          147.0,
+          147
+        ],
+        "hours_per_robot": [
+          229.2173714379984,
+          236.5129931972789
+        ],
+        "rate_per_hour": [
+          24.576294117999414,
+          24.4093215456659
+        ],
+        "credit_rate": [
+          0.008560259898863207,
+          0.006810555069482269
+        ]
+      },
+      "top_customers_hours_vs_plan": {
+        "C026": 702.0,
+        "C013": 325.0,
+        "C029": -263.0
+      },
+      "sla_credit_customers": [
+        "C008",
+        "C009",
+        "C020"
+      ],
+      "month": "2026-05"
+    },
+    {
+      "plan_revenue": 855881.9789430379,
+      "actual_revenue": 861393.31,
+      "variance": 5511.331056962139,
+      "effects": {
+        "fleet": 0.0,
+        "utilisation": 10766.544183973816,
+        "rate": -2291.866001550127,
+        "credits": -2963.347125461444
+      },
+      "drivers": {
+        "robots": [
+          147.0,
+          147
+        ],
+        "hours_per_robot": [
+          241.53783978663398,
+          244.5762585034013
+        ],
+        "rate_per_hour": [
+          24.313363703701334,
+          24.24906662112537
+        ],
+        "credit_rate": [
+          0.008560259898863207,
+          0.011959296719690858
+        ]
+      },
+      "top_customers_hours_vs_plan": {
+        "C026": 769.0,
+        "C013": 316.0,
+        "C029": -316.0
+      },
+      "sla_credit_customers": [
+        "C004",
+        "C011",
+        "C012",
+        "C025",
+        "C031",
+        "C033"
+      ],
+      "month": "2026-06"
+    }
+  ],
+  "narratives_template": [
+    {
+      "headline": "2026-01: usage revenue $833.6K vs. plan $803.2K, +$30.4K (+3.8%).",
+      "drivers": [
+        {
+          "driver": "utilisation",
+          "amount": 85481.93,
+          "explanation": "hours per robot vs. plan: +$85.5K"
+        },
+        {
+          "driver": "rate",
+          "amount": -32018.16,
+          "explanation": "realised rate per hour (tiers and minimums): -$32.0K"
+        },
+        {
+          "driver": "fleet",
+          "amount": -27320.37,
+          "explanation": "fewer/more robots live than planned: -$27.3K"
+        },
+        {
+          "driver": "credits",
+          "amount": 4246.66,
+          "explanation": "SLA downtime credits: +$4.2K"
+        }
+      ],
+      "watch_items": [
+        "Largest hours gaps vs. plan: C026 +587 h, C027 +433 h, C025 +366 h"
+      ]
+    },
+    {
+      "headline": "2026-02: usage revenue $794.6K vs. plan $763.5K, +$31.1K (+4.1%).",
+      "drivers": [
+        {
+          "driver": "utilisation",
+          "amount": 34229.83,
+          "explanation": "hours per robot vs. plan: +$34.2K"
+        },
+        {
+          "driver": "rate",
+          "amount": -5905.75,
+          "explanation": "realised rate per hour (tiers and minimums): -$5.9K"
+        },
+        {
+          "driver": "credits",
+          "amount": 2765.16,
+          "explanation": "SLA downtime credits: +$2.8K"
+        },
+        {
+          "driver": "fleet",
+          "amount": 0.0,
+          "explanation": "fewer/more robots live than planned: +$0.0K"
+        }
+      ],
+      "watch_items": [
+        "Largest hours gaps vs. plan: C026 +456 h, C027 +362 h, C034 -281 h"
+      ]
+    },
+    {
+      "headline": "2026-03: usage revenue $854.2K vs. plan $836.8K, +$17.4K (+2.1%).",
+      "drivers": [
+        {
+          "driver": "utilisation",
+          "amount": 26117.0,
+          "explanation": "hours per robot vs. plan: +$26.1K"
+        },
+        {
+          "driver": "rate",
+          "amount": -7456.32,
+          "explanation": "realised rate per hour (tiers and minimums): -$7.5K"
+        },
+        {
+          "driver": "credits",
+          "amount": -1294.23,
+          "explanation": "SLA downtime credits: -$1.3K"
+        },
+        {
+          "driver": "fleet",
+          "amount": 0.0,
+          "explanation": "fewer/more robots live than planned: +$0.0K"
+        }
+      ],
+      "watch_items": [
+        "Largest hours gaps vs. plan: C026 +548 h, C027 +373 h, C013 +299 h"
+      ]
+    },
+    {
+      "headline": "2026-04: usage revenue $858.3K vs. plan $846.3K, +$11.9K (+1.4%).",
+      "drivers": [
+        {
+          "driver": "utilisation",
+          "amount": 18752.78,
+          "explanation": "hours per robot vs. plan: +$18.8K"
+        },
+        {
+          "driver": "rate",
+          "amount": -3693.17,
+          "explanation": "realised rate per hour (tiers and minimums): -$3.7K"
+        },
+        {
+          "driver": "credits",
+          "amount": -3125.55,
+          "explanation": "SLA downtime credits: -$3.1K"
+        },
+        {
+          "driver": "fleet",
+          "amount": 0.0,
+          "explanation": "fewer/more robots live than planned: +$0.0K"
+        }
+      ],
+      "watch_items": [
+        "Largest hours gaps vs. plan: C026 +690 h, C013 +315 h, C029 -296 h"
+      ]
+    },
+    {
+      "headline": "2026-05: usage revenue $842.9K vs. plan $821.0K, +$21.9K (+2.7%).",
+      "drivers": [
+        {
+          "driver": "utilisation",
+          "amount": 26131.38,
+          "explanation": "hours per robot vs. plan: +$26.1K"
+        },
+        {
+          "driver": "rate",
+          "amount": -5755.51,
+          "explanation": "realised rate per hour (tiers and minimums): -$5.8K"
+        },
+        {
+          "driver": "credits",
+          "amount": 1484.89,
+          "explanation": "SLA downtime credits: +$1.5K"
+        },
+        {
+          "driver": "fleet",
+          "amount": 0.0,
+          "explanation": "fewer/more robots live than planned: +$0.0K"
+        }
+      ],
+      "watch_items": [
+        "Largest hours gaps vs. plan: C026 +702 h, C013 +325 h, C029 -263 h"
+      ]
+    },
+    {
+      "headline": "2026-06: usage revenue $861.4K vs. plan $855.9K, +$5.5K (+0.6%).",
+      "drivers": [
+        {
+          "driver": "utilisation",
+          "amount": 10766.54,
+          "explanation": "hours per robot vs. plan: +$10.8K"
+        },
+        {
+          "driver": "credits",
+          "amount": -2963.35,
+          "explanation": "SLA downtime credits: -$3.0K"
+        },
+        {
+          "driver": "rate",
+          "amount": -2291.87,
+          "explanation": "realised rate per hour (tiers and minimums): -$2.3K"
+        },
+        {
+          "driver": "fleet",
+          "amount": 0.0,
+          "explanation": "fewer/more robots live than planned: +$0.0K"
+        }
+      ],
+      "watch_items": [
+        "Largest hours gaps vs. plan: C026 +769 h, C013 +316 h, C029 -316 h"
+      ]
+    }
+  ],
+  "narrative_checks_template": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "economics": {
+    "case": {
+      "robot_cost": 75000.0,
+      "install_cost": 12000.0,
+      "deploy_fee": 6000.0,
+      "rate_per_hour": 25.0,
+      "hours_per_month": 220.0,
+      "maintenance": 1100.0,
+      "support": 900.0,
+      "life_months": 48,
+      "salvage_share": 0.1,
+      "loan_share": 0.0,
+      "loan_apr": 0.095,
+      "loan_months": 36,
+      "discount_rate": 0.12
+    },
+    "base": {
+      "monthly_contribution": 3500.0,
+      "contribution_margin": 0.6363636363636364,
+      "upfront_cash": 81000.0,
+      "payback_months": 23.142857142857142,
+      "irr": 0.5261451383802627,
+      "npv": 58207.79814470659,
+      "levered_upfront_cash": 81000.0,
+      "levered_payback_months": 23.142857142857142,
+      "levered_irr": 0.5261451383802627
+    },
+    "financed_80pct": {
+      "monthly_contribution": 3500.0,
+      "contribution_margin": 0.6363636363636364,
+      "upfront_cash": 81000.0,
+      "payback_months": 23.142857142857142,
+      "irr": 0.5261451383802627,
+      "npv": 58207.79814470659,
+      "levered_upfront_cash": 21000.0,
+      "levered_payback_months": 13.307790693179305,
+      "levered_irr": 1.4493974343672473
+    },
+    "sensitivity": [
+      {
+        "driver": "hours_per_month",
+        "low": 0.8,
+        "high": 1.2,
+        "base_payback": 23.142857142857142,
+        "payback_low": 33.75,
+        "payback_high": 17.608695652173914
+      },
+      {
+        "driver": "rate_per_hour",
+        "low": 0.9,
+        "high": 1.1,
+        "base_payback": 23.142857142857142,
+        "payback_low": 27.45762711864407,
+        "payback_high": 20.0
+      },
+      {
+        "driver": "robot_cost",
+        "low": 0.85,
+        "high": 1.15,
+        "base_payback": 23.142857142857142,
+        "payback_low": 19.928571428571427,
+        "payback_high": 26.357142857142858
+      },
+      {
+        "driver": "maintenance",
+        "low": 0.7,
+        "high": 1.3,
+        "base_payback": 23.142857142857142,
+        "payback_low": 21.148825065274153,
+        "payback_high": 25.55205047318612
+      },
+      {
+        "driver": "install_cost",
+        "low": 0.7,
+        "high": 1.3,
+        "base_payback": 23.142857142857142,
+        "payback_low": 22.114285714285714,
+        "payback_high": 24.17142857142857
+      }
+    ],
+    "hours_for_payback": {
+      "24": 215.0,
+      "36": 170.0
+    },
+    "contracts": [
+      {
+        "customer_id": "C019",
+        "segment": "Enterprise",
+        "hours_per_robot_month": 173.34015873015875,
+        "revenue_per_robot_month": 3687.128253968254,
+        "contract_min_hours_per_robot": 112.5,
+        "payback_months": 47.18558269965978,
+        "irr": 0.04142201158352443,
+        "hours_needed_for_24m_payback": 252.7
+      },
+      {
+        "customer_id": "C006",
+        "segment": "SMB",
+        "hours_per_robot_month": 182.698,
+        "revenue_per_robot_month": 3796.076,
+        "contract_min_hours_per_robot": 160.0,
+        "payback_months": 45.098314325228976,
+        "irr": 0.0702494729791685,
+        "hours_needed_for_24m_payback": 258.7
+      },
+      {
+        "customer_id": "C012",
+        "segment": "SMB",
+        "hours_per_robot_month": 192.68055555555557,
+        "revenue_per_robot_month": 3999.2122222222224,
+        "contract_min_hours_per_robot": 185.0,
+        "payback_months": 40.515958785988445,
+        "irr": 0.12384071204235036,
+        "hours_needed_for_24m_payback": 259.0
+      },
+      {
+        "customer_id": "C030",
+        "segment": "SMB",
+        "hours_per_robot_month": 160.7375,
+        "revenue_per_robot_month": 4045.7633333333333,
+        "contract_min_hours_per_robot": 123.33333333333333,
+        "payback_months": 39.59402276900714,
+        "irr": 0.13610707626550633,
+        "hours_needed_for_24m_payback": 213.6
+      },
+      {
+        "customer_id": "C015",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 162.57583333333335,
+        "revenue_per_robot_month": 4191.365416666667,
+        "contract_min_hours_per_robot": 173.33333333333334,
+        "payback_months": 36.96325559577865,
+        "irr": 0.17447283986908424,
+        "hours_needed_for_24m_payback": 208.5
+      },
+      {
+        "customer_id": "C002",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 164.13044444444446,
+        "revenue_per_robot_month": 4389.973333333333,
+        "contract_min_hours_per_robot": 120.0,
+        "payback_months": 33.891591537980894,
+        "irr": 0.2268787069204472,
+        "hours_needed_for_24m_payback": 201.0
+      },
+      {
+        "customer_id": "C024",
+        "segment": "SMB",
+        "hours_per_robot_month": 188.69500000000002,
+        "revenue_per_robot_month": 4475.843333333333,
+        "contract_min_hours_per_robot": 140.0,
+        "payback_months": 32.71612501060245,
+        "irr": 0.2495904261753874,
+        "hours_needed_for_24m_payback": 226.7
+      },
+      {
+        "customer_id": "C035",
+        "segment": "SMB",
+        "hours_per_robot_month": 165.035,
+        "revenue_per_robot_month": 4625.93,
+        "contract_min_hours_per_robot": 160.0,
+        "payback_months": 30.84621448401139,
+        "irr": 0.289401128820711,
+        "hours_needed_for_24m_payback": 191.8
+      },
+      {
+        "customer_id": "C004",
+        "segment": "SMB",
+        "hours_per_robot_month": 221.96988095238098,
+        "revenue_per_robot_month": 4759.71011904762,
+        "contract_min_hours_per_robot": 190.0,
+        "payback_months": 29.350908793258775,
+        "irr": 0.325040016117216,
+        "hours_needed_for_24m_payback": 250.7
+      },
+      {
+        "customer_id": "C029",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 192.27800000000002,
+        "revenue_per_robot_month": 4830.0232000000005,
+        "contract_min_hours_per_robot": 144.0,
+        "payback_months": 28.621673490167847,
+        "irr": 0.34383991820826165,
+        "hours_needed_for_24m_payback": 214.0
+      },
+      {
+        "customer_id": "C016",
+        "segment": "Enterprise",
+        "hours_per_robot_month": 192.46747252747255,
+        "revenue_per_robot_month": 4880.7,
+        "contract_min_hours_per_robot": 186.42857142857142,
+        "payback_months": 28.118165723608858,
+        "irr": 0.3574219670357257,
+        "hours_needed_for_24m_payback": 212.0
+      },
+      {
+        "customer_id": "C014",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 181.15107142857144,
+        "revenue_per_robot_month": 4987.761785714285,
+        "contract_min_hours_per_robot": 140.0,
+        "payback_months": 27.110595090711126,
+        "irr": 0.38621240971364945,
+        "hours_needed_for_24m_payback": 195.3
+      },
+      {
+        "customer_id": "C020",
+        "segment": "SMB",
+        "hours_per_robot_month": 237.68071428571426,
+        "revenue_per_robot_month": 5130.359285714286,
+        "contract_min_hours_per_robot": 165.0,
+        "payback_months": 25.87562404406797,
+        "irr": 0.42478171765774686,
+        "hours_needed_for_24m_payback": 249.1
+      },
+      {
+        "customer_id": "C000",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 221.1664,
+        "revenue_per_robot_month": 5134.7632,
+        "contract_min_hours_per_robot": 186.0,
+        "payback_months": 25.839272325258882,
+        "irr": 0.4259772149898291,
+        "hours_needed_for_24m_payback": 231.6
+      },
+      {
+        "customer_id": "C013",
+        "segment": "SMB",
+        "hours_per_robot_month": 219.52857142857144,
+        "revenue_per_robot_month": 5397.8575,
+        "contract_min_hours_per_robot": 180.0,
+        "payback_months": 23.838551204692966,
+        "irr": 0.4979175996878926,
+        "hours_needed_for_24m_payback": 218.6
+      },
+      {
+        "customer_id": "C031",
+        "segment": "SMB",
+        "hours_per_robot_month": 202.585,
+        "revenue_per_robot_month": 5571.8475,
+        "contract_min_hours_per_robot": 170.0,
+        "payback_months": 22.677339948024084,
+        "irr": 0.5461086867294982,
+        "hours_needed_for_24m_payback": 195.5
+      },
+      {
+        "customer_id": "C027",
+        "segment": "Enterprise",
+        "hours_per_robot_month": 261.5081666666666,
+        "revenue_per_robot_month": 5594.128,
+        "contract_min_hours_per_robot": 167.5,
+        "payback_months": 22.53675995957852,
+        "irr": 0.5523183043576441,
+        "hours_needed_for_24m_payback": 251.3
+      },
+      {
+        "customer_id": "C026",
+        "segment": "SMB",
+        "hours_per_robot_month": 218.11169999999998,
+        "revenue_per_robot_month": 5795.7495,
+        "contract_min_hours_per_robot": 150.0,
+        "payback_months": 21.339659005421723,
+        "irr": 0.6089335805147236,
+        "hours_needed_for_24m_payback": 202.3
+      },
+      {
+        "customer_id": "C009",
+        "segment": "SMB",
+        "hours_per_robot_month": 276.495,
+        "revenue_per_robot_month": 5867.253333333332,
+        "contract_min_hours_per_robot": 120.0,
+        "payback_months": 20.945097985133295,
+        "irr": 0.6292029300394317,
+        "hours_needed_for_24m_payback": 253.3
+      },
+      {
+        "customer_id": "C021",
+        "segment": "SMB",
+        "hours_per_robot_month": 251.08083333333335,
+        "revenue_per_robot_month": 5968.899166666667,
+        "contract_min_hours_per_robot": 130.0,
+        "payback_months": 20.408681752433864,
+        "irr": 0.6581979377827349,
+        "hours_needed_for_24m_payback": 226.1
+      },
+      {
+        "customer_id": "C003",
+        "segment": "SMB",
+        "hours_per_robot_month": 215.69000000000003,
+        "revenue_per_robot_month": 6044.0706666666665,
+        "contract_min_hours_per_robot": 180.0,
+        "payback_months": 20.029323589136094,
+        "irr": 0.6797822753607188,
+        "hours_needed_for_24m_payback": 191.9
+      },
+      {
+        "customer_id": "C017",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 285.1554166666666,
+        "revenue_per_robot_month": 6204.752083333334,
+        "contract_min_hours_per_robot": 190.0,
+        "payback_months": 19.263918156094217,
+        "irr": 0.7263389371335192,
+        "hours_needed_for_24m_payback": 247.1
+      },
+      {
+        "customer_id": "C010",
+        "segment": "SMB",
+        "hours_per_robot_month": 278.01933333333335,
+        "revenue_per_robot_month": 6235.989333333333,
+        "contract_min_hours_per_robot": 170.0,
+        "payback_months": 19.121861181897852,
+        "irr": 0.7354581837822773,
+        "hours_needed_for_24m_payback": 239.7
+      },
+      {
+        "customer_id": "C022",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 229.24222222222224,
+        "revenue_per_robot_month": 6401.873888888888,
+        "contract_min_hours_per_robot": 160.0,
+        "payback_months": 18.40125411235846,
+        "irr": 0.784273468316214,
+        "hours_needed_for_24m_payback": 192.5
+      },
+      {
+        "customer_id": "C018",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 289.4703333333334,
+        "revenue_per_robot_month": 6405.302333333333,
+        "contract_min_hours_per_robot": 125.0,
+        "payback_months": 18.386933261561243,
+        "irr": 0.7852893931129845,
+        "hours_needed_for_24m_payback": 243.0
+      },
+      {
+        "customer_id": "C034",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 272.60375,
+        "revenue_per_robot_month": 6461.7275,
+        "contract_min_hours_per_robot": 142.5,
+        "payback_months": 18.154403199209277,
+        "irr": 0.802051249002137,
+        "hours_needed_for_24m_payback": 226.8
+      },
+      {
+        "customer_id": "C001",
+        "segment": "Enterprise",
+        "hours_per_robot_month": 296.9301147959184,
+        "revenue_per_robot_month": 6537.994732142857,
+        "contract_min_hours_per_robot": 180.0,
+        "payback_months": 17.849293527441255,
+        "irr": 0.8248344251662545,
+        "hours_needed_for_24m_payback": 244.2
+      },
+      {
+        "customer_id": "C023",
+        "segment": "SMB",
+        "hours_per_robot_month": 283.89,
+        "revenue_per_robot_month": 6662.61,
+        "contract_min_hours_per_robot": 190.0,
+        "payback_months": 17.372244300938743,
+        "irr": 0.8623822912913133,
+        "hours_needed_for_24m_payback": 229.1
+      },
+      {
+        "customer_id": "C008",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 254.51416666666668,
+        "revenue_per_robot_month": 6685.320333333334,
+        "contract_min_hours_per_robot": 164.0,
+        "payback_months": 17.28803886123474,
+        "irr": 0.8692690407768995,
+        "hours_needed_for_24m_payback": 204.7
+      },
+      {
+        "customer_id": "C028",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 240.94799999999995,
+        "revenue_per_robot_month": 6692.108,
+        "contract_min_hours_per_robot": 118.0,
+        "payback_months": 17.263029751233343,
+        "irr": 0.8713300160009854,
+        "hours_needed_for_24m_payback": 193.6
+      },
+      {
+        "customer_id": "C025",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 304.423,
+        "revenue_per_robot_month": 6728.0633333333335,
+        "contract_min_hours_per_robot": 132.85714285714286,
+        "payback_months": 17.131750209211805,
+        "irr": 0.8822678812080147,
+        "hours_needed_for_24m_payback": 243.3
+      },
+      {
+        "customer_id": "C033",
+        "segment": "SMB",
+        "hours_per_robot_month": 281.3177777777778,
+        "revenue_per_robot_month": 6753.291111111111,
+        "contract_min_hours_per_robot": 143.33333333333334,
+        "payback_months": 17.04082457955447,
+        "irr": 0.8899631167794928,
+        "hours_needed_for_24m_payback": 224.0
+      },
+      {
+        "customer_id": "C011",
+        "segment": "SMB",
+        "hours_per_robot_month": 292.8845,
+        "revenue_per_robot_month": 7413.217,
+        "contract_min_hours_per_robot": 165.0,
+        "payback_months": 14.963375752348375,
+        "irr": 1.0977169876689379,
+        "hours_needed_for_24m_payback": 212.4
+      },
+      {
+        "customer_id": "C007",
+        "segment": "Mid-market",
+        "hours_per_robot_month": 295.6833333333334,
+        "revenue_per_robot_month": 7611.984666666667,
+        "contract_min_hours_per_robot": 165.71428571428572,
+        "payback_months": 14.43339652745547,
+        "irr": 1.162898150342723,
+        "hours_needed_for_24m_payback": 208.8
+      },
+      {
+        "customer_id": "C005",
+        "segment": "Enterprise",
+        "hours_per_robot_month": 312.86418181818186,
+        "revenue_per_robot_month": 7737.335454545454,
+        "contract_min_hours_per_robot": 127.27272727272727,
+        "payback_months": 14.118051949677623,
+        "irr": 1.2046684277732411,
+        "hours_needed_for_24m_payback": 217.4
+      },
+      {
+        "customer_id": "C032",
+        "segment": "SMB",
+        "hours_per_robot_month": 320.5566666666667,
+        "revenue_per_robot_month": 8229.546666666667,
+        "contract_min_hours_per_robot": 180.0,
+        "payback_months": 13.002551282490325,
+        "irr": 1.3739264554739394,
+        "hours_needed_for_24m_payback": 209.4
+      }
+    ],
+    "fleet_plan_24m": {
+      "0.0": {
+        "peak_cash_need": 16912500.0,
+        "month_of_peak": 23,
+        "robots": 330
+      },
+      "0.8": {
+        "peak_cash_need": 2616525.4649047917,
+        "month_of_peak": 20,
+        "robots": 330
+      }
+    }
+  },
+  "datalayer": {
+    "customers": 36,
+    "contracts": 36,
+    "invoices": 411,
+    "gl": 5089,
+    "bills": 858,
+    "deposits": 337,
+    "robot_months": 1755
+  },
+  "seconds": 18.91317367553711
+}
